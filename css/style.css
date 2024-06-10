@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 115, 115);
+  padding: 15vh 0;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; /* Ensures the video stays in the background */
+  background-size: cover;
+}
+
+.pixel {
+  position: relative;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  margin: 5vh;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+  background-color: rgb(221, 221, 221);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+  flex: 1;
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0px 0px 32px 7px rgba(0, 0, 0, 0.53);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vh;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+}
+
+.legal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white; /* Choose a color that is visible on your video */
+  padding: 10px; /* Optional for some spacing */
+  font-size: 1.2em; /* Adjust size as needed */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: adds a semi-transparent background for better readability */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  margin: 20px;
+  background-color: rgba(182, 84, 84, 0.587);
+  border-radius: 10px;
+}
+
+p {
+  margin: 30px 0 0 30px;
+  font-size: 2em;
+}
+
+.input * {
+  border-radius: 15px;
+}
+
+.odin-logo {
+  position: absolute;
+  width: 20vw;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  z-index: 10;
+}
+
+label {
+  font-size: 0.8em;
+  padding: 0 0 0 0.5vh;
+  margin: 0 0 0.5vh;
+}
+
+button {
+  width: 6vw;
+}
